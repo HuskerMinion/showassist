@@ -1,6 +1,8 @@
 package com.msp1974.vacompanion.ui.theme
 import androidx.compose.ui.graphics.Color
 
+val showAssistWalnut = Color(0xFF1C1511)
+
 val primaryLight = Color(0xFF00638A)
 val onPrimaryLight = Color(0xFFFFFFFF)
 val primaryContainerLight = Color(0xFF007DAD)

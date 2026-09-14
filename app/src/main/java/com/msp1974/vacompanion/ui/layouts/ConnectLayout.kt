@@ -34,7 +34,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -51,6 +50,7 @@ import com.msp1974.vacompanion.ui.components.InfoItem
 import com.msp1974.vacompanion.ui.components.LabelledSwitch
 import com.msp1974.vacompanion.ui.theme.AppTheme
 import com.msp1974.vacompanion.ui.theme.CustomColours
+import com.msp1974.vacompanion.ui.theme.showAssistWalnut
 
 @Composable
 fun ConnectionScreen(vaViewModel: VAViewModel = viewModel()) {
@@ -88,7 +88,7 @@ fun ConnectionContent(
 ) {
     Box(modifier = Modifier
         .fillMaxSize()
-        .background(MaterialTheme.colorScheme.background)
+        .background(showAssistWalnut)
     ) {
         when(val orientation = LocalConfiguration.current.orientation) {
             Configuration.ORIENTATION_LANDSCAPE -> {
@@ -170,7 +170,7 @@ fun ConnectionContent(
                 Column(
                     modifier = Modifier
                         .fillMaxSize()
-                        .background(MaterialTheme.colorScheme.background)
+                        .background(showAssistWalnut)
                         .statusBarsPadding()
                         .safeDrawingPadding()
                         .verticalScroll(rememberScrollState()),
@@ -243,8 +243,7 @@ fun ConnectionContent(
 fun LogoImage(orientation: Int) {
     Image(
         painter = painterResource(id = R.drawable.main_logo),
-        contentDescription = "Logo",
-        colorFilter = ColorFilter.tint(MaterialTheme.colorScheme.surfaceBright),
+        contentDescription = "ShowAssist logo",
         modifier =
                 when(orientation) {
                     Configuration.ORIENTATION_PORTRAIT -> Modifier.padding(start=48.dp, end=48.dp, top=8.dp)

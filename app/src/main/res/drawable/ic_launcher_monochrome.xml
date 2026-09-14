@@ -4,19 +4,15 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- Screen -->
     <path
-        android:fillColor="#FF2A211C"
-        android:strokeColor="#FFE9A23B"
+        android:strokeColor="#FF000000"
         android:strokeWidth="3"
         android:pathData="M31,31H77A8,8 0,0 1,85 39V63A8,8 0,0 1,77 71H31A8,8 0,0 1,23 63V39A8,8 0,0 1,31 31Z" />
-    <!-- Stand -->
     <path
-        android:fillColor="#FF5A4A3E"
-        android:pathData="M40,71H68L74,80H34Z" />
-    <!-- Voice level bars -->
+        android:fillColor="#FF000000"
+        android:pathData="M40,73H68L74,80H34Z" />
     <path
-        android:strokeColor="#FFE9A23B"
+        android:strokeColor="#FF000000"
         android:strokeWidth="5"
         android:strokeLineCap="round"
         android:pathData="M37.5,49.5V52.5M45.5,44.5V57.5M54,40.5V61.5M62.5,45.5V56.5M70.5,50.5V51.5" />

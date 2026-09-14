@@ -85,7 +85,7 @@ class VAForegroundService @Inject constructor() : LifecycleService() {
                 if (!checkIfPermissionIsGranted()) return START_STICKY
                 val notification =
                     NotificationCompat.Builder(this, "VACAForegroundServiceChannelId")
-                        .setSmallIcon(R.mipmap.ic_launcher)
+                        .setSmallIcon(R.drawable.ic_notification_icon)
                         .setContentTitle(getString(R.string.app_name))
                         .setContentText("Service is running")
                         .apply {
