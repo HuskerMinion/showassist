@@ -27,6 +27,7 @@ If the official VACA app is installed, remove it first — both apps use the mic
 - **Music ducking:** the un-duck volume animation is cancelled when music is ducked again, so music no longer returns to full volume while the assistant is listening.
 - **Voice pipeline:** a stale `pipeline-ended` event from a run Home Assistant just cancelled no longer ends the new run before it starts, which previously left the satellite stuck in "listening" and made every following wake word fail.
 - **Release builds:** code shrinking (R8) is disabled, because it removed classes that native code and WorkManager load by name and crashed the app at startup.
+- **No analytics or crash reporting:** the Firebase Analytics and Crashlytics SDKs are removed. (Google ML Kit, used for camera motion detection, still includes a few small Firebase support libraries it needs internally.)
 
 Bug fixes are kept as separate commits.
 
