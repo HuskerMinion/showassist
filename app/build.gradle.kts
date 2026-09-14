@@ -64,8 +64,10 @@ android {
             }
         }
         release {
-            isMinifyEnabled = true
-            isShrinkResources = true
+            // R8 strips classes and constructors that native code (microfeatures, rnnoise, ONNX)
+            // and Room/WorkManager reach only by name, which crashes the release build at runtime.
+            isMinifyEnabled = false
+            isShrinkResources = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
