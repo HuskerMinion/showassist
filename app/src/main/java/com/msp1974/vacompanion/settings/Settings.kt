@@ -428,7 +428,7 @@ class APPConfig @Inject constructor(val context: Context) {
         const val DEFAULT_DUCKING_VOLUME = 2
         const val DEFAULT_MUTE = false
         const val DEFAULT_MIC_GAIN = 0
-        const val GITHUB_API_URL = "https://api.github.com/repos/msp1974/ViewAssist_Companion_App/releases"
-        const val GITHUB_RELEASES_URL = "https://github.com/msp1974/ViewAssist_Companion_App/releases"
+        const val GITHUB_API_URL = "https://api.github.com/repos/HuskerMinion/showassist/releases"
+        const val GITHUB_RELEASES_URL = "https://github.com/HuskerMinion/showassist/releases"
     }
 }

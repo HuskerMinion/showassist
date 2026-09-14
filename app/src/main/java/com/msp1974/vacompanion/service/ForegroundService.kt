@@ -86,7 +86,7 @@ class VAForegroundService @Inject constructor() : LifecycleService() {
                 val notification =
                     NotificationCompat.Builder(this, "VACAForegroundServiceChannelId")
                         .setSmallIcon(R.mipmap.ic_launcher)
-                        .setContentTitle("View Assist Companion App")
+                        .setContentTitle(getString(R.string.app_name))
                         .setContentText("Service is running")
                         .apply {
                             if (isHomeApp()) {

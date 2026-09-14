@@ -38,7 +38,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.msp1974.vacompanion"
+        applicationId = "com.huskerminion.showassist"
         minSdk = 26
         targetSdk = 36
         versionName = "0.13.3"
@@ -90,7 +90,7 @@ android {
 androidComponents {
     onVariants { variant ->
         variant.outputs.forEach { output ->
-            val name = "vaca-${variant.outputs.first().versionName.get()}-${variant.name}.apk"
+            val name = "showassist-${variant.outputs.first().versionName.get()}-${variant.name}.apk"
             (output as? com.android.build.api.variant.impl.VariantOutputImpl)?.outputFileName?.set(name)
         }
     }

@@ -502,7 +502,7 @@ class VAViewModel @Inject constructor(
                     showUpdateDialog(
                         VADialog(
                             title = "Update Available",
-                            message = "A new version of View Assist Companion is available (v${latest.version}). Would you like to update from v$current?",
+                            message = "A new version of ShowAssist is available (v${latest.version}). Would you like to update from v$current?",
                             confirmText = "Update",
                             dismissText = "Cancel",
                             confirmCallback = {
@@ -515,7 +515,7 @@ class VAViewModel @Inject constructor(
                     showUpdateDialog(
                         VADialog(
                             title = "Up to Date",
-                            message = "You are already using the latest version of View Assist Companion (v$current).",
+                            message = "You are already using the latest version of ShowAssist (v$current).",
                             confirmText = "OK",
                             dismissText = "",
                             confirmCallback = {},

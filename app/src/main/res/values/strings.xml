@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">View Assist Companion App</string>
+    <string name="app_name">ShowAssist</string>
 
     <string name="audio_playback_attribution">"This app plays audio"</string>
     <string name="empty" />
 
-    <string name="service_notification_channel_name">View Assist</string>
-    <string name="service_notification_channel_description">View Assist Running…</string>
-    <string name="service_notification_title">View Assist Companion App</string>
+    <string name="service_notification_channel_name">ShowAssist</string>
+    <string name="service_notification_channel_description">ShowAssist Running…</string>
+    <string name="service_notification_title">ShowAssist</string>
     <string name="service_notification_message">Background services running…</string>
 
     <string name="dialog_title_ssl_error">SSL Certificate Error</string>
